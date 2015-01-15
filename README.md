@@ -1,6 +1,6 @@
 restructr
 ====
-
+ 
 domain driven development component foundation
 
 [![Build Status](https://travis-ci.org/jgswift/restructr.png?branch=master)](https://travis-ci.org/jgswift/restructr)
