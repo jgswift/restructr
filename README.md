@@ -47,18 +47,18 @@ As mentioned above, it is possible to include these concepts into an already exi
 
 These traits are included to customize domain implementations in various ways.  Some of these are foundational to the provided component abstractions, while others may be excluded or included on a per-domain basis.
 
-* ```ArrayAccess``` - ArrayAccess implementation using local domain data
-* ```ArrayAggregate``` - IteratorAggregate implementation using local domain data
-* ```ArrayAttributable``` - Array key restraint as defined by ```getAttributes``` method
-* ```ArrayEnumerable``` - Enumerable implementation to retrieve local domain data
-* ```ArrayEnumerableAggregate``` - IterateAggregate implementation using ```Enumerable``` data
-* ```ArrayImmutable``` - ArrayAccess implementation that disallows mutation (```offsetSet```, ```offsetUnset```)
-* ```ArrayIterator``` - Iterator implementation using local domain data
-* ```Countable``` - Countable implementation using local domain data
-* ```ObjectAccess``` - Object magic implementation based on ArrayAccess trait
-* ```ObjectAttributable``` - ObjectAccess implementation that retrains property mutation
-* ```ObjectEnumerable``` - ArrayAccess alias
-* ```ObjectImmutable``` - ObjectAccess implementation that disallows property mutation (```__set```, ```__unset```)
-* ```RecursiveArrayIterator``` - RecursiveIterator implementation that uses RecursiveArrayIterator from SPL 
-* ```RecursiveIterator``` - Minimal RecursiveIterator implementation
-* ```RecursiveSerializer``` - Enumerable implementation that recursively converts domain data to an array
+* ```ArrayAccess``` - SPL ```ArrayAccess``` implementation using local domain data
+* ```ArrayAggregate``` - SPL ```IteratorAggregate``` implementation using local domain data
+* ```ArrayAttributable``` - ```ArrayAccess``` key restraints as defined by ```getAttributes``` method
+* ```ArrayEnumerable``` - ```Enumerable``` implementation to retrieve local domain data
+* ```ArrayEnumerableAggregate``` - SPL ```IterateAggregate``` implementation using ```Enumerable``` data
+* ```ArrayImmutable``` - ```ArrayAccess``` implementation that disallows mutation (```offsetSet```, ```offsetUnset```)
+* ```ArrayIterator``` - SPL ```Iterator``` implementation using local domain data
+* ```Countable``` - SPL ```Countable``` implementation using local domain data
+* ```ObjectAccess``` - Object magic implementation based on ```ArrayAccess``` trait
+* ```ObjectAttributable``` - ```ObjectAccess``` implementation that restrains property mutation as defined by ```getAttributes``` method
+* ```ObjectEnumerable``` - ```ArrayAccess``` alias
+* ```ObjectImmutable``` - ```ObjectAccess``` implementation that disallows property mutation (```__set```, ```__unset```)
+* ```RecursiveArrayIterator``` - SPL ```RecursiveIterator``` implementation that uses RecursiveArrayIterator from SPL 
+* ```RecursiveIterator``` - Minimal SPL ```RecursiveIterator``` implementation
+* ```RecursiveSerializer``` - ```Enumerable``` implementation that recursively converts domain data to an array
