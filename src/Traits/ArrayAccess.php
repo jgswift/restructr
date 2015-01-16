@@ -17,10 +17,13 @@ namespace restructr\Traits {
             unset($this->{self::$DOMAIN_PROPERTY}[$offset]);
         }
         
-        public function offsetGet($offset) {
-            return isset($this->{self::$DOMAIN_PROPERTY}[$offset])
-                    ? $this->{self::$DOMAIN_PROPERTY}[$offset] 
-                    : null;
+        public function &offsetGet($offset) {
+            if(isset($this->{self::$DOMAIN_PROPERTY}[$offset])) {
+                return $this->{self::$DOMAIN_PROPERTY}[$offset];
+            }
+            
+            $null = null;
+            return $null;
         }
     }
 }
