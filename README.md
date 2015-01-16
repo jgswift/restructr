@@ -56,8 +56,8 @@ These traits are included to customize domain implementations in various ways.  
 * ```ArrayIterator``` - SPL ```Iterator``` implementation using local domain data
 * ```Countable``` - SPL ```Countable``` implementation using local domain data
 * ```ObjectAccess``` - Object magic implementation based on ```ArrayAccess``` trait
-* ```ObjectAttributable``` - ```ObjectAccess``` implementation that restrains property mutation as defined by ```getAttributes``` method
-* ```ObjectEnumerable``` - ```ArrayAccess``` alias
+* ```ObjectAttributable``` - ```ObjectAccess``` property restraints as defined by ```getAttributes``` method
+* ```ObjectEnumerable``` - ```ArrayEnumerable``` alias
 * ```ObjectImmutable``` - ```ObjectAccess``` implementation that disallows property mutation (```__set```, ```__unset```)
 * ```RecursiveArrayIterator``` - SPL ```RecursiveIterator``` implementation that uses RecursiveArrayIterator from SPL 
 * ```RecursiveIterator``` - Minimal SPL ```RecursiveIterator``` implementation
