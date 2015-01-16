@@ -29,9 +29,7 @@ Install via composer.json using [composer](https://getcomposer.org/):
 ## Description
 
 restructr provides a set of foundational component abstractions in order to facilitate [domain driven development](https://en.wikipedia.org/wiki/Domain-driven_design) in PHP.
-With some exception, these components are largely composed at compile-time by traits, allowing a flexible approach that requires little imposition
-on an already existing domain model.  restructr provides these domain driven abstractions from both array-first or object-first perspectives.  
-restructr assumes very little about any given domains implementation and allows significant customization of existing functionality.
+With no exception, the component foundation classes are composed at compile-time by traits, allowing a flexible approach that requires little imposition on an already existing domain model.  restructr provides these domain driven abstractions from both array-first or object-first perspectives.  restructr assumes very little about any given domains implementation and allows significant customization of existing functionality.
 
 ## Component Abstractions
 
@@ -43,25 +41,24 @@ restructr assumes very little about any given domains implementation and allows 
 * ```CollectionIterator``` - A ```Collection``` of non-accessable but iterable ```Entity``` components.
 * ```EntityIterator``` - A ```Entity``` of non-accessable but iterable domain data
 
-As mentioned above, it is possible to include these concepts into an already existing domain without extending the provided abstractions.  Nearly all
-abstractions are provided as composable traits that may be used or combined in any number of ways.
+As mentioned above, it is possible to include these concepts into an already existing domain without extending the provided abstractions.  Nearly all abstractions are provided as composable traits that may be used or combined in any number of ways.
 
 ## Trait Extensions
 
-These traits are included to customize domain implementations in various ways.  Some of these are foundational to the provided component abstractions, while others may
-be excluded or included on a per-domain basis.
+These traits are included to customize domain implementations in various ways.  Some of these are foundational to the provided component abstractions, while others may be excluded or included on a per-domain basis.
 
-* ```ArrayAggregate```
-* ```ArrayAttributable```
-* ```ArrayEnumerable```
-* ```ArrayEnumerableAggregate```
-* ```ArrayImmutable```
-* ```ArrayIterator```
-* ```Countable```
-* ```ObjectAccess```
-* ```ObjectAttributable```
-* ```ObjectImmutable```
-* ```RecursiveArrayIterator```
-* ```RecursiveIterator```
-* ```RecursiveSerializer```
-
+* ```ArrayAccess``` - ArrayAccess implementation using local domain data
+* ```ArrayAggregate``` - IteratorAggregate implementation using local domain data
+* ```ArrayAttributable``` - Array key restraint as defined by ```getAttributes``` method
+* ```ArrayEnumerable``` - Enumerable implementation to retrieve local domain data
+* ```ArrayEnumerableAggregate``` - IterateAggregate implementation using ```Enumerable``` data
+* ```ArrayImmutable``` - ArrayAccess implementation that disallows mutation (```offsetSet```, ```offsetUnset```)
+* ```ArrayIterator``` - Iterator implementation using local domain data
+* ```Countable``` - Countable implementation using local domain data
+* ```ObjectAccess``` - Object magic implementation based on ArrayAccess trait
+* ```ObjectAttributable``` - ObjectAccess implementation that retrains property mutation
+* ```ObjectEnumerable``` - ArrayAccess alias
+* ```ObjectImmutable``` - ObjectAccess implementation that disallows property mutation (```__set```, ```__unset```)
+* ```RecursiveArrayIterator``` - RecursiveIterator implementation that uses RecursiveArrayIterator from SPL 
+* ```RecursiveIterator``` - Minimal RecursiveIterator implementation
+* ```RecursiveSerializer``` - Enumerable implementation that recursively converts domain data to an array
