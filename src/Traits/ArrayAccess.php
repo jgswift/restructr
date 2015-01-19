@@ -2,7 +2,7 @@
 namespace restructr\Traits {
     trait ArrayAccess {
         public function offsetSet($offset, $value) {
-            if($offset == null) {
+            if($offset === null) {
                 $offset = count($this->{self::$DOMAIN_PROPERTY});
             }
             
