@@ -1,6 +1,6 @@
 {
     "name": "jgswift/restructr",
-    "description": "PHP 5.5+ domain driven development component foundation",
+    "description": "PHP 5.5+ domain component foundation",
     "keywords": ["php", "ddd","domain driven development","trait","interface"],
     "license": "MIT",
     "type": "library",

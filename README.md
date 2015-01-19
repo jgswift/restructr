@@ -1,9 +1,12 @@
 restructr
 ====
  
-domain driven development component foundation
+domain component foundation
 
 [![Build Status](https://travis-ci.org/jgswift/restructr.png?branch=master)](https://travis-ci.org/jgswift/restructr)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jgswift/restructr/badges/quality-score.png?s=4c1433cd4686440e0a8a2eb2a0d3aac9d2a62337)](https://scrutinizer-ci.com/g/jgswift/restructr/)
+[![Latest Stable Version](https://poser.pugx.org/jgswift/restructr/v/stable.svg)](https://packagist.org/packages/jgswift/restructr)
+[![License](https://poser.pugx.org/jgswift/restructr/license.svg)](https://packagist.org/packages/jgswift/restructr)
 
 ## Installation
 
